@@ -16,21 +16,17 @@
     <title> =Decodificador= </title>
     <script type="text/javascript" src="./index.js" defer=""></script>
     <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
   </head>
 
   <body>
     <main>
       <div class="container">
-        <h1><span></span>Decodificador<span></span></h1>
-        <h3>cifra de césar</h3>
+        <h1>Decodificador</h1>
+        <h3>CIFRA DE CÉSAR</h3>
         <form action="#">
           <textarea name="mensagem" id="mensagem" cols="50" rows="4" placeholder="Digite seu texto aqui..."></textarea>
-
-          <label id="selecione" for="select"></label>
-          <select name="select" class="select" id="select">
-            <option value="selecione" disabled="" selected="">Selecione</option>
-            <option value="cifra">Cifra de césar</option>
-          </select>
           <div class="chave-container">
             <label class="chave" for="range">Selecione o valor de sua chave</label>
             <div class="slider-range">
@@ -38,33 +34,24 @@
               <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value">
             </div>
           </div>
-
-          <div class="radio-button">
-            <div class="radio">
-              <input type="radio" name="codificar" id="codificar" value="codificar" checked="">
-              <label for="codificar">CRIPTOGRAFAR</label>
-            </div>
-
-            <div class="radio">
-              <input type="radio" name="codificar" id="decodificar" value="decodificar">
-              <label for="decodificar">DESCRIPTOGRAFAR</label>
-            </div>
-          </div>
-
-          <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly="" placeholder="Mensagem Codificada"></textarea>
           <div class="btn">
-            <button>Codificar Mensagem!</button>
+            <button id="btn-crypt">CRIPTOGRAFAR MENSAGEM!</button>
+            <button id="btn-decrypt">DESCRIPTOGRAFAR MENSAGEM!</button>
           </div>
+          <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly="" placeholder="Mensagem Codificada"></textarea>
         </form>
       </div>
     </main>
+    <footer>
+      <br>
+          <div id="copyright" class="container">
+            <ul class="link">
+              <a>© Anderson, Joelton, Rodrigo &amp; Victor. All rights reserved.</a>
+            </ul>
+          </div>
 
 
-
-
-    <!-- 
-  Colocar um link em cifra de césar que abra uma caixa de texto com essa informação:
-  Para utilizar a Cifra de César basta informar a sua palavra ou frase e escolher o número que representará um deslocamento, sendo da esquerda para a direita. Por exemplo: Se você escolher a letra "C" com deslocamento no valor de '10' o resultado será um "M". E para decifrar a mensagem, basta fazer o processo inverso e colar a mensagem criptografa com o valor da cifra. -->
+    </footer>
   </body>
 
 </html>
